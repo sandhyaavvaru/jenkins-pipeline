@@ -1,10 +1,10 @@
 pipeline{
-agent any{
-stage (vcs){
-git 'https://github.com/sandhyaavvaru/jenkins-pipeline.git'
-}
-stage (package){
-sh 'mvn package'
-}
-}
-}
+    agent any{
+      stage (vcs){
+         git 'https://github.com/sandhyaavvaru/jenkins-pipeline.git'
+                 }
+      stage (package){
+         sh 'mvn package'
+                     } 
+                 }
+        }
